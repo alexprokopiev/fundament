@@ -1,0 +1,53 @@
+.overlay
+    display: none
+    position: fixed
+    top: 0
+    width: 100vw
+    height: 100vh
+    background-color: rgba(0, 0, 0, .5)
+    z-index: 3
+.modal
+    position: relative
+    background-color: #ffffff
+    margin: 6rem auto
+    border-radius: .6rem
+    &_call
+        width: 40rem
+        height: 35rem
+    &_confidence
+        width: 120rem
+        height: 60rem
+        overflow-y: scroll
+    &_thanks
+        width: 40rem
+        height: 35rem
+    &__close
+        position: absolute
+        top: 0
+        right: 1rem
+        font-size: 2.5rem
+        font-weight: 700
+        opacity: .4
+        cursor: pointer
+    &__title
+        font-family: Oswald
+        font-size: 2rem
+        text-align: center
+        padding: 1.5rem
+        border-bottom: .1rem solid #e5e5e5
+    &__text
+        width: 29.5rem
+        margin: 0 auto
+        font-size: 1.6rem
+        padding: 2.5rem 0
+        text-align: center
+    &__form-call
+        width: 30rem
+        margin: 1rem auto
+    &__label
+        color: #333333
+        opacity: 0.8
+        font-size: 1.3rem
+        text-transform: uppercase
+    &__confidence-text
+        padding: 1rem

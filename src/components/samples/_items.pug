@@ -1,0 +1,27 @@
+mixin samples__content-item(title, src, value1, value2, value3, value4, task, name, feedback)
+    .samples__content-item
+        .samples__item-title=title
+        .samples__item-wrap
+            .samples__item-left
+                img(src=src, alt="sample").samples__item-img
+                button.button.button_samples.show-modal-call Заказать расчет
+                .samples__keys-wrap
+                    .samples__keys Материалы 
+                    .samples__keys Работы 
+                    .samples__keys Срок 
+                    .samples__keys Итого
+                .samples__value-wrap
+                    .samples__value #{value1} руб.
+                    .samples__value #{value2} руб.
+                    .samples__value #{value3} дней
+                    .samples__value.samples__value_result #{value4} руб.
+            .samples__item-right
+                .samples__task-title Задача
+                .samples__task-text=task
+                .samples__feedback-title Пару слов от клиента
+                .samples__feedback
+                    .samples__feedback-name=name 
+                    .samples__feedback-text=feedback
+                    img(src="img/profile.png", alt="icon").samples__feedback-icon
+        
+        

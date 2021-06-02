@@ -1,0 +1,80 @@
+.start
+    position: relative
+    min-height: 52rem
+    background-color: rgba(0, 0, 0, .4)
+    margin-top: 5.5rem
+    &::before
+        position: absolute
+        content: ''
+        background: url(img/mainbg.jpg) center center/cover no-repeat
+        width: 100%
+        height: 100%
+        z-index: -1
+    &__title
+        width: 60rem
+        margin: 0 auto
+        padding-top: 1.5rem
+        color: #ffffff
+        font-family: Oswald
+        font-size: 5.6rem
+        font-weight: 700
+        line-height: 7rem
+    &__subtitle
+        margin: 0 auto
+        padding-top: 1.5rem
+        color: #ffffff
+        text-align: center
+        font-family: Oswald
+        font-size: 2rem
+        font-weight: 700
+    &__form
+        width: 80rem
+        height: 25rem
+        margin: 5rem auto 0
+        background-color: rgba(0, 0, 0, .5)
+    &__form-text
+        color: #ffffff
+        text-align: center
+        font-size: 1.6rem
+        line-height: 2.5rem
+        width: 40rem
+        margin: 0 auto
+        padding-top: 2rem
+    &__form-title
+        font-family: Oswald
+        font-size: 2.8rem
+        font-weight: 700
+        color: #fff100
+        text-align: center
+        padding-top: 3rem
+@media ( max-width: 992px)
+    .start
+        &__form
+            width: 70rem
+@media ( max-width: 768px)
+    .start
+        &__title
+            width: 50rem
+            font-size: 4.7rem
+            text-align: center
+        &__form
+            width: 50rem
+@media ( max-width: 576px)
+    .start
+        min-height: 46rem
+        &__title
+            width: 30rem
+            font-size: 2.8rem
+            line-height: 5rem
+        &__subtitle
+            padding-top: 2.5rem
+            font-size: 1.6rem
+        &__form
+            margin-top: 2rem
+            width: 30rem
+        &__form-text
+            width: 30rem
+            font-size: 1.2rem
+        &__form-title
+            padding-top: 2rem
+            font-size: 1.8rem

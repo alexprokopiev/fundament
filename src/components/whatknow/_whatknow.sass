@@ -1,0 +1,51 @@
+.whatknow
+    min-height: 32.5rem
+    position: relative
+    &::before
+        position: absolute
+        content: ''
+        background: url(img/4.png)
+        opacity: .75
+        width: 100%
+        height: 100%
+        z-index: -1
+    &__title
+        color: #ffffff
+    &__subtitle
+        font-size: 2.2rem
+        color: #ffffff
+        text-align: center
+        padding-top: 1.5rem
+    &__wrap
+        padding-top: 2rem
+        display: flex
+        justify-content: space-around
+    &__item
+        width: 14rem
+    &__item-img
+        display: block
+        margin: 0 auto
+        width: 7rem
+        height: 7rem
+    &__item-text
+        padding-top: 2rem
+        color: #ffffff
+        font-size: 1.6rem
+        text-align: center
+@media ( max-width: 992px)
+    .whatknow
+        &__item-text
+            font-size: 1.2rem
+@media ( max-width: 576px)
+    .whatknow
+        &__subtitle
+            font-size: 1.3rem
+        &__wrap
+            flex-wrap: wrap
+            padding-top: 0
+        &__item
+            width: 10rem
+            margin-top: 2rem
+        &__item-text
+            padding-top: 0.5rem
+            font-size: 1rem

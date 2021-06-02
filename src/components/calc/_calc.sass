@@ -1,0 +1,134 @@
+.calc
+    min-height: 72rem
+    &__title
+        line-height: 5rem
+        width: 75rem
+        margin: 0 auto 2rem
+    &__form
+        width: 100%
+        border-radius: .5rem
+        border: .1rem solid rgb(217, 217, 217)
+        box-shadow: 0 .2rem .5rem 0 rgba(0, 0, 0, 0.5)
+    &__question
+        width: 95rem
+        margin: 0 auto
+        padding: 2.5rem 0 1rem
+        text-align: left
+        color: #333333
+        opacity: 0.8
+        font-size: 1.3rem
+        text-transform: uppercase
+    &__form-checkbox-wrap
+        display: flex
+        justify-content: space-around
+        width: 95rem
+        margin: 0 auto
+    &__form-label
+        cursor: pointer
+    &__form-img
+        position: relative
+        width: 14.5rem
+        height: 14.5rem
+        border-radius: 5rem
+        &::after
+            display: none
+            position: absolute
+            content: ''
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background-color: rgba(255, 217, 64, 0.5)
+            border-radius: 5rem
+        &:hover
+            &::after
+                display: flex
+        img
+            display: block
+            width: 100%
+            height: 100%
+            border-radius: 5rem
+    &__form-check
+        display: none
+        justify-content: center
+        align-items: center
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(255, 217, 64, 0.75)
+        border-radius: 5rem
+        img
+            width: 2.6rem
+            height: 2.6rem
+    &__form-label-text
+        text-align: center
+        margin: 1rem 0
+        font-size: 1.4rem
+@media ( max-width: 1200px)
+    .calc
+        &__question
+            width: 80rem
+        &__form-checkbox-wrap
+            width: 80rem
+        &__form-img
+            width: 11rem
+            height: 11rem
+            border-radius: 3rem
+            &::after
+                border-radius: 3rem
+            img
+                border-radius: 3rem
+        &__form-check
+            border-radius: 3rem
+@media ( max-width: 992px)
+    .calc
+        min-height: 97rem
+        &__title
+            width: 70rem
+        &__question
+            width: 60rem
+        &__form-checkbox-wrap
+            width: 60rem
+            flex-wrap: wrap
+        &__form-label-text
+            font-size: 1.6rem
+        &__form-img
+            width: 16rem
+            height: 16rem
+@media ( max-width: 768px)
+    .calc
+        min-height: 80rem
+        &__title
+            width: 50rem
+            line-height: 3.2rem
+        &__question
+            width: 40rem
+        &__form-checkbox-wrap
+            width: 40rem
+        &__form-label
+            margin-top: 1rem
+        &__form-label-text
+            font-size: 1.2rem
+            margin: .5rem 0
+        &__form-img
+            width: 11rem
+            height: 11rem
+@media ( max-width: 576px)
+    .calc
+        min-height: 63rem
+        &__title
+            width: 30rem
+            line-height: 2.2rem
+        &__question
+            padding-top: 1.5rem
+            width: 26rem
+        &__form-checkbox-wrap
+            width: 26rem
+        &__form-img
+            width: 8rem
+            height: 8rem
+        &__form-label-text
+            width: 7rem
+            margin: .5rem auto

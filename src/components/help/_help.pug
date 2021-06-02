@@ -1,0 +1,11 @@
+section.help
+    .container
+        h2.help__title НЕ ЗНАЕТЕ КАКОЙ ВЫБРАТЬ?
+        .help__subtitle Наши специалисты помогут выбрать фундамент под грунт участка, с учетом его типа, уклона, уровня грунтовых вод и проблемные особенности.
+        .help__form
+            form(action="sendmail.php", method="post").form.form_help
+                input(type="text" name="phone" placeholder="Ваш телефон").input.input_help
+                <input type="hidden" name="city" value="Москва">
+                <input type="hidden" name="type" value="фундамент">
+                <input type="hidden" name="leadtype" value="Заявка на расчет под грунт">
+                button(type="submit").button.button_help Рассчитать стоимость

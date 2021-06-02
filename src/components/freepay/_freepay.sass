@@ -1,0 +1,31 @@
+.freepay
+    min-height: 32rem
+    &__wrap
+        display: flex
+        justify-content: space-around
+        padding-top: 2rem
+        border-bottom: .3rem solid #ffdb4d
+    &__item
+        width: 20rem
+    &__item-img
+        margin: 0 auto
+        width: 10rem
+        height: 10rem
+    &__item-text
+        margin: 1rem 0 2rem
+        font-family: Oswald
+        font-size: 1.8rem
+        line-height: 2rem
+        font-weight: 700
+        text-align: center
+@media ( max-width: 768px)
+    .freepay
+        &__item-text
+            font-size: 1.3rem
+@media ( max-width: 576px)
+    .freepay
+        min-height: 45rem
+        &__wrap
+            flex-wrap: wrap
+        &__item
+            width: 14rem

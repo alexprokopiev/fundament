@@ -1,0 +1,58 @@
+.steps
+    padding-bottom: 3rem
+    border-bottom: .3rem solid #ffd940
+    &__wrap
+        display: flex
+        justify-content: space-between
+        padding-top: 2rem
+    &__item
+        display: flex
+    &__icon
+        width: 4rem
+        height: 4rem
+    &__item-wrap
+        width: 22rem
+        padding-left: 1.5rem
+        a
+            padding-left: .5rem
+            color: #e6bd19
+            font-size: 1.4rem
+            font-weight: 700
+            text-decoration: underline
+    &__item-title
+        font-family: Oswald
+        font-size: 2rem
+        font-weight: 700
+    &__item-text
+        font-size: 1.6rem
+        line-height: 2.4rem
+@media ( max-width: 1200px)
+    .steps
+        &__item-wrap
+            padding-left: 0
+            width: 18rem
+            a
+                font-size: 1.3rem
+        &__item-title
+            font-size: 1.8rem
+        &__item-text
+            font-size: 1.5rem
+@media ( max-width: 992px)
+    .steps
+        &__wrap
+            flex-wrap: wrap
+        &__item
+            margin-bottom: 2rem
+        &__item-wrap
+            width: 30rem
+@media ( max-width: 768px)
+    .steps
+        &__item-wrap
+            width: 46rem
+@media ( max-width: 576px)
+    .steps
+        padding-bottom: 0
+        &__item-wrap
+            width: 26rem
+        &__item-text
+            font-size: 1.3rem

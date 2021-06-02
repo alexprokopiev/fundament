@@ -1,0 +1,57 @@
+section.calc
+    .container
+        h2.calc__title Ответьте всего на 2 вопроса и мы рассчитаем стоимость вашего фундамента
+        .calc__form
+            form(action="sendmail.php" method="post").form.form_calc 
+                .calc__question Какой фундамент вам нужен?  
+                .calc__form-checkbox-wrap
+                    label.calc__form-label
+                        .calc__form-img
+                            img(src="img/count1.jpg", alt="count")
+                            .calc__form-check
+                                img(src="img/tick.png", alt="tick")
+                        input(name="fundament" type="radio" value="Ленточный").input_calc-radio
+                        .calc__form-label-text Ленточный
+                    label.calc__form-label
+                        .calc__form-img
+                            img(src="img/count2.jpg", alt="count")
+                            .calc__form-check
+                                img(src="img/tick.png", alt="tick")
+                        input(name="fundament" type="radio" value="Монолитный").input_calc-radio
+                        .calc__form-label-text Монолитный
+                    label.calc__form-label
+                        .calc__form-img
+                            img(src="img/count3.jpg", alt="count")
+                            .calc__form-check
+                                img(src="img/tick.png", alt="tick")
+                        input(name="fundament" type="radio" value="Ростверковый").input_calc-radio
+                        .calc__form-label-text Ростверковый
+                    label.calc__form-label
+                        .calc__form-img
+                            img(src="img/count4.jpg", alt="count")
+                            .calc__form-check
+                                img(src="img/tick.png", alt="tick")
+                        input(name="fundament" type="radio" value="Шведская плита (УШП)").input_calc-radio
+                        .calc__form-label-text Шведская плита (УШП)
+                    label.calc__form-label
+                        .calc__form-img
+                            img(src="img/count5.jpg", alt="count")
+                            .calc__form-check
+                                img(src="img/tick.png", alt="tick")
+                        input(name="fundament" type="radio" value="Цокольный этаж").input_calc-radio
+                        .calc__form-label-text Цокольный этаж
+                    label.calc__form-label
+                        .calc__form-img
+                            img(src="img/count6.jpg", alt="count")
+                            .calc__form-check
+                                img(src="img/tick.png", alt="tick")
+                        input(name="fundament" type="radio" value="Плита с ростверком").input_calc-radio
+                        .calc__form-label-text Плита с ростверком
+                .calc__question Укажите примерную площадь фундамента
+                input(type="text" name="square" placeholder="" value="").input.input_calc
+                .calc__question Ваш номер телефона  
+                input(type="text" name="phone" placeholder="" value="").input.input_calc
+                <input type="hidden" name="city" value="Москва">
+                <input type="hidden" name="type" value="фундамент">
+                <input type="hidden" name="leadtype" value="Заявка на бесплатную консультацию">
+                button(type="submit").button.button_calc Рассчитать стоимость

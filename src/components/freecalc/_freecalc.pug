@@ -1,0 +1,11 @@
+section.freecalc
+    .container
+        h2.freecalc__title РАССЧИТАЕМ ДЛЯ ВАС СТОИМОСТЬ ЗА 15 МИНУТ
+        .freecalc__subtitle Оставьте заявку и получите примерную стоимость вашего фундамента. Это БЕСПЛАТНО, и ни к чему ВАС не обязывает!
+        .freecalc__form
+            form(action="sendmail.php", method="post").form.form_freecalc
+                input(type="text" name="phone" placeholder="Ваш телефон").input.input_freecalc
+                <input type="hidden" name="city" value="Москва">
+                <input type="hidden" name="type" value="фундамент">
+                <input type="hidden" name="leadtype" value="Заявка на бесплатный расчет">
+                button(type="submit").button.button_freecalc Рассчитать стоимость

@@ -1,0 +1,155 @@
+.types
+    position: relative
+    min-height: 358rem
+    &::before
+        position: absolute
+        content: ''
+        background: url(img/4.png)
+        opacity: .75
+        width: 100%
+        height: 100%
+        z-index: -1
+    &__title
+        color: #ffffff
+    &__wrap
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+    &__item
+        margin: 1rem 0
+        padding: 1.5rem
+        width: 55.5rem
+        background-color: rgb(118, 118, 118)
+        box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5)
+    &__item-img
+        width: 52.5rem
+        height: 34rem
+    &__item-title
+        font-family: Oswald
+        font-size: 2.8rem
+        font-weight: 700
+        color: #ffffff
+        padding: 1.5rem
+    &__subitem
+        display: flex
+        justify-content: space-between
+        min-height: 5rem
+        line-height: 2.5rem
+        margin-bottom: 2rem
+    &__subitem-title
+        width: 40%
+        color: #fff100
+        font-size: 1.6rem
+        text-align: right
+    &__subitem-descr
+        width: 55%
+        color: #ffffff
+        font-size: 1.6rem
+    &__table
+        display: flex
+        flex-wrap: wrap
+        min-height: 32.5rem
+        border-top: .1rem solid #ffffff
+        border-left: .1rem solid #ffffff
+        color: #ffffff
+        font-size: 1.6rem
+    &__table-cell
+        display: flex
+        align-items: center
+        border-right: .1rem solid #ffffff
+        border-bottom: .1rem solid #ffffff
+        padding: .7rem 1rem
+        &_1
+            width: 16.66%
+        &_21
+            width: 25%
+        &_22
+            width: 37.5%
+        &_3
+            width: 25%
+        &_41
+            width: 72%
+        &_42
+            width: 28%
+        &_center
+            justify-content: center
+    &__item-subtitle
+        font-family: Oswald
+        color: #fff100
+        font-size: 2.8rem
+        font-weight: 700
+        text-align: center
+        margin-top: 2rem
+    &__item-text
+        color: #ffffff
+        font-size: 1.6rem
+        text-align: center
+        margin-top: 1rem
+@media ( max-width: 1200px) and (min-width: 993px)
+    .types
+        min-height: 350rem
+        &__item
+            width: 43rem
+        &__item-img
+            width: 40rem
+            height: 25rem
+        &__subitem
+            &_1
+                min-height: 10rem
+        &__subitem-title
+            width: 25%
+            font-size: 1.5rem
+        &__subitem-descr
+            width: 70%
+            font-size: 1.5rem
+        &__table
+            font-size: 1.2rem
+        &__item-subtitle
+            font-size: 2.4rem
+        &__item-text
+            font-size: 1.3rem
+@media ( max-width: 768px)
+    .types
+        &__item
+            width: 50rem
+        &__item-img
+            width: 47rem
+            height: 30rem
+        &__subitem
+            min-height: 0
+            margin-bottom: 0.5rem
+        &__subitem-title
+            width: 20%
+        &__subitem-descr
+            width: 75%
+            font-size: 1.2rem
+        &__table
+            font-size: 1.1rem
+            min-height: 0
+        &__table-cell
+            padding: .5rem
+            justify-content: center
+@media ( max-width: 576px)
+    .types
+        &__item
+            width: 30rem
+        &__item-img
+            width: 27rem
+            height: 18rem
+        &__item-title
+            font-size: 1.8rem
+            padding-left: 0
+            padding-bottom: .5rem
+        &__subitem
+            display: block
+        &__subitem-title
+            width: 100%
+            text-align: left
+        &__subitem-descr
+            width: 100%
+        &__table
+            display: none
+        &__item-subtitle
+            display: none
+        &__item-text
+            display: none

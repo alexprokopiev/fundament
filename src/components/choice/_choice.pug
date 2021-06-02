@@ -1,0 +1,33 @@
+section.choice 
+    .container
+        .choice__wrap
+            .choice__left
+                h2.choice__left-title Не знаете, какой фундамент выбрать?
+                .choice__left-text Мы поможем Вам с выбором фундамента под Ваш дом и участок! ОСТАВЬТЕ ЗАЯВКУ. <br><br>Мы посчитаем стоимость фундамента, который подойдет именно Вам В ТЕЧЕНИЕ 15 МИНУТ!
+                .choice__form
+                    form(action="sendmail.php" method="post").form.form_choice
+                        .choice__form-label Ваш номер телефона
+                        input(type="text" name="phone").input.input_choice
+                        <input type="hidden" name="city" value="Москва">
+                        <input type="hidden" name="type" value="фундамент">
+                        <input type="hidden" name="leadtype" value="Помощь в выборе">
+                        button(type="submit").button.button_choice Подобрать фундамент
+            .choice__right
+                h2.choice__right-title МЫ ВОЗВОДИМ ФУНДАМЕНТЫ ДЛЯ ЛЮБЫХ ПОСТРОЕК НА РАЗЛИЧНЫХ ГРУНТАХ
+                .choice__right-wrap 
+                    ul.choice__variants Фундамент для любых построек:
+                        li.choice__variants-item фундамент для дома, коттеджа;
+                        li.choice__variants-item фундамент для летнего дачного домика;
+                        li.choice__variants-item фундамент для бани;
+                        li.choice__variants-item фундамент для гаража;
+                        li.choice__variants-item фундамент для беседки, пристроя;
+                        li.choice__variants-item фундамент для заборов;
+                        li.choice__variants-item фундаменты для ЛЭП и стелл;
+                        li.choice__variants-item фундаменты под склады и ангары;
+                    ul.choice__variants Строим на различных грунтах:
+                        li.choice__variants-item фундамент на песчаных грунтах;
+                        li.choice__variants-item фундамент на глиняном грунте и суглинке;
+                        li.choice__variants-item фундамент на болотистых грунтах;
+                        li.choice__variants-item фундамент на насыпных грунтах;
+                        li.choice__variants-item фундамент при высоком уровне грунтовых вод.
+                        

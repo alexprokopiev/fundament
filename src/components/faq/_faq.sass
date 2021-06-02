@@ -1,0 +1,78 @@
+.faq
+    &__item
+        position: relative
+        width: 100rem
+        margin: 1rem auto
+        padding: 1.5rem 3rem
+        border: 2px solid rgb(230, 230, 230)
+        cursor: pointer
+    &__item-title
+        font-family: Oswald
+        font-size: 1.6rem
+        font-weight: 700
+        text-transform: uppercase
+        &::before
+            position: absolute
+            content: "\f067"
+            font-family: FontAwesome
+            width: 3.2rem
+            height: 3.2rem
+            top: 1.1rem
+            left: -1.7rem
+            background-color: #ffd940
+            border-radius: 100%
+            font-size: 1.6rem
+            display: flex
+            justify-content: center
+            align-items: center
+            cursor: pointer
+        &::after
+            position: absolute
+            content: "\f068"
+            font-family: FontAwesome
+            width: 3.2rem
+            height: 3.2rem
+            top: 1.1rem
+            left: -1.7rem
+            background-color: #ffd940
+            border-radius: 100%
+            font-size: 1.6rem
+            display: none
+            justify-content: center
+            align-items: center
+            cursor: pointer
+        &_active
+            &::before
+                display: none
+            &::after
+                display: flex
+    &__item-text
+        display: none
+        font-size: 1.6rem
+        padding: 1.5rem 0
+        &_active
+            display: block
+@media ( max-width: 1200px)
+    .faq
+        &__item
+            width: 90rem
+@media ( max-width: 992px)
+    .faq
+        &__item
+            width: 70rem
+@media ( max-width: 768px)
+    .faq
+        &__item
+            width: 50rem
+        &__item-title
+            font-size: 1.3rem
+        &__item-text
+            font-size: 1.3rem
+@media ( max-width: 576px)
+    .faq
+        &__item
+            width: 27rem
+        &__item-title
+            font-size: 1.1rem
+            &::before
+                top: .7rem

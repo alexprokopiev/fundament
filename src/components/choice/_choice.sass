@@ -1,0 +1,105 @@
+.choice
+    padding-top: 3.5rem
+    min-height: 49rem
+    &__wrap
+        display: flex
+    &__left
+        width: 45%
+    &__left-title
+        font-family: Oswald
+        font-size: 3.2rem
+        line-height: 3.8rem
+        font-weight: 700
+        text-align: left
+    &__left-text
+        font-size: 1.6rem
+        margin-top: 2rem
+        width: 47rem
+    &__form
+        margin: 5rem auto 0
+        width: 42rem
+    &__form-label
+        margin-bottom: 1rem
+        font-size: 1.3rem
+        text-transform: uppercase
+        opacity: .8
+        color: #333333
+    &__right
+        width: 55%
+    &__right-title
+        height: 10rem
+        padding: 1.5rem
+        font-size: 2.8rem
+        background-color: #ffd940
+        text-align: center
+    &__right-wrap
+        display: flex
+        margin-top: 3rem
+    &__variants
+        width: 50%
+        padding-left: 1rem
+        font-size: 1.6rem
+        font-weight: 700
+    &__variants-item
+        font-weight: 400
+        margin-left: 4rem
+@media ( max-width: 1200px)
+    .choice
+        min-height: 47rem
+        &__left
+            width: 40%
+        &__left-text
+            width: 35rem
+        &__right
+            width: 60%
+        &__right-title
+            font-size: 2.6rem
+@media ( max-width: 992px)
+    .choice
+        min-height: 76rem
+        &__wrap
+            display: block
+        &__left
+            width: 100%
+        &__left-text
+            width: 48rem
+        &__form
+            width: 70rem
+            margin: 3rem auto
+        &__right
+            width: 100%
+@media ( max-width: 768px)
+    .choice
+        padding-top: 0
+        min-height: 70rem
+        &__left-title
+            font-size: 3rem
+        &__form
+            width: 50rem
+        &__right-title
+            font-size: 2.4rem
+        &__variants
+            font-size: 1.3rem
+@media ( max-width: 576px)
+    .choice
+        &__left-title
+            font-size: 1.6rem
+            text-align: center
+        &__left-text
+            margin-top: 0
+            width: 30rem
+        &__form
+            margin: 1rem auto
+            width: 30rem
+        &__right-title
+            margin-top: 3rem
+            font-size: 1.4rem
+            height: 7rem
+        &__right-wrap
+            margin-top: 1rem
+            display: block
+        &__variants
+            width: 100%
+            margin-top: 1rem
+        &__variants-item
+            margin-left: 2rem

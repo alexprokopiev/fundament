@@ -1,0 +1,13 @@
+.overlay#modal-call
+    .modal.modal_call
+        .modal__close#modal-call-close &times; 
+        h2.modal__title Заказать обратный звонок
+        .modal__text Мы перезвоним в течение 15 минут, ответим на ваши вопросы и сделаем расчет
+        .modal__form-call
+            form(action="sendmail.php", method="post").form.form_modal-call
+                .modal__label Ваш номер телефона
+                input(type="text" name="phone").input.input_modal-call
+                <input type="hidden" name="city" value="Москва">
+                <input type="hidden" name="type" value="фундамент">
+                <input type="hidden" name="leadtype" value="Заявка на обратный звонок">
+                button(type="submit").button.button_modal-call Узнать цену фундамента  
